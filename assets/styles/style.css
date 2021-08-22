@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+  --mainColor: #E0FF00;
+  --mainColorOpacity: rgba(112, 149, 25, 0.548);
+  --mediumColor: #B8C657;
+  --mediumColorOpacity: rgba(183, 198, 87, 0.472);
+  --white: #fff;
+  --black: #000;
+  --titleFont: "Raleway", sans-serif;
+  --textFont: "Monserrat", sans-serif;
+  --mainBackground: #121212;
+  --mainBackgroundOpacity: #12121257;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--titleFont);
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* border: 2px solid black; */
+  color: #fff;
+  background-color: var(--mainBackground);
+}
+
+.container {
+  /* border: 2px solid black; */
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 80px 0;
+  max-width: 1200px;
+}
+
+.hero{
+  /* border: 2px solid black; */
+  background-image: 
+  linear-gradient(
+    to top,
+    var(--mainBackground) 0%,
+    var(--mainColorOpacity) 55%,
+    rgb(255, 255, 255) 100%
+  ),
+  url('../img/img2.jpg');
+  width: 100%;
+  height: 100vh;
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.nav{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__items{
+  padding: 10px 15px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.5s ease;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav__items--cta{
+  border: 2px solid #000;
+  padding: 0 20px 0 20px 0;
+  transition: 0.5s ease;
+}
+
+.nav__items:hover{
+  text-decoration: underline;
+} 
+
+.nav__items--cta:hover{
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+.hero__container{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__texts{
+  color: #fff;
+  text-align: center;
+}
+
+.hero__title{
+  font-size: 70px;
+  margin: 20px;
+}
+
+.hero__subtitle{
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+.hero__cta{
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border: 2px solid #fff;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  /* margin-top: 100px; */
+}
+
+main{
+  margin: 80px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "title title"
+  "courses cart"
+  "footer footer";
+}
+
+.course-title{
+  grid-area: title;
+  text-align: center;
+  padding: 20px;
+  font-size: 35px;
+}
+
+.courses{
+  grid-area: courses;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 40px 40px;
+}
+
+.course-list{
+  margin: 0 auto;
+}
+
+.course{
+  width: 350px;
+  height: 430px;
+  border:  2px solid #e9ff3fa2; 
+  background-color: #232121;
+  border-radius: 15px;
+}
+
+.course img{
+  width: 300px;
+  height: 210px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 25px 0;
+  border-radius: 15px;
+}
+
+.info-course h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info-course span{
+  font-weight: bold;
+}
+
+.info-course strike{
+  margin-right: 10px;
+  color: red;
+}
+
+.add-cart{
+  text-decoration: none;
+  border: 2px solid #fff;
+  display: inline-block; 
+  width: 180px;
+  margin: 20px 0;
+  color: #fff;
+  padding: 8px 10px;
+  transition: 0.3s ease;
+}
+
+.add-cart:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+/* CART */
+.cart{
+  margin: 70px;
+  grid-area: cart;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cart h3{
+  font-size: 25px;
+}
+
+th{
+  padding: 20px;
+}
+
+.button{
+  margin-top: 25px;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  width: 40%;
+  padding: 8px 10px;
+}
+/* CART */
+
+footer{
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-texts{
+  /* list-style: none; */
+}
+
+.footer-info{
+  list-style: none;
+}
+
+/* Tabla Dinamica */
+.remove-course{
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+td{
+  width: 10px;
+  /* margin: 20px; */
+  padding: 10px;
+}

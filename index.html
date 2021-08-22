@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Project</title>
+  <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="nav__items nav__items--cta">Courses</a>
+        <a href="#" class="nav__items">About Us</a>
+        <a href="#" class="nav__items">Contact</a>
+      </nav>
+
+      <section class="hero__container">
+        <div class="hero__texts">
+          <h1 class="hero__title">Bienvenido a Yikes! Courses</h1>
+          <h2 class="hero__subtitle">THE FINE ART OF PROGRAMMING TEACHING</h2>
+          <a href="" class="hero__cta">Ver m&aacute;s</a>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+
+    <h2 class="course-title">Choose Your Courses</h2>
+
+    <div class="container">
+      <section class="courses" id="courses">
+        <article class="course">
+          <img src="./assets/img/web.jpg" alt="web course image">
+          <div class="info-course">
+            <h4>Web Development Course</h4>
+            <p>Carlos Solis</p>
+            <p class="price"><strike> $200 </strike> <span> $15 </span> </p>
+            <a href="#" class="add-cart" data-id="1">Agregar Al Carrito</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <img src="./assets/img/git.jpg" alt="web course image">
+          <div class="info-course">
+            <h4>Git & GitHub Course</h4>
+            <p>Carlos Solis</p>
+            <p class="price"><strike> $200 </strike> <span> $15 </span> </p>
+            <a href="#" class="add-cart" data-id="2">Agregar Al Carrito</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <img src="./assets/img/geometric.jpg" alt="web course image">
+          <div class="info-course">
+            <h4>Geometrics Course</h4>
+            <p>Carlos Solis</p>
+            <p class="price"><strike> $200 </strike> <span> $15 </span> </p>
+            <a href="#" class="add-cart" data-id="3">Agregar Al Carrito</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <img src="./assets/img/js.jpg" alt="web course image">
+          <div class="info-course">
+            <h4>JavaScript Course</h4>
+            <p>Carlos Solis</p>
+            <p class="price"><strike> $200 </strike> <span> $15 </span> </p>
+            <a href="#" class="add-cart" data-id="4">Agregar Al Carrito</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <img src="./assets/img/programming.jpg" alt="web course image">
+          <div class="info-course">
+            <h4>Programming Course</h4>
+            <p>Carlos Solis</p>
+            <p class="price"><strike> $200 </strike> <span> $15 </span> </p>
+            <a href="#" class="add-cart" data-id="5">Agregar Al Carrito</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <img src="./assets/img/girl.jpg" alt="web course image">
+          <div class="info-course">
+            <h4>UX / UI Course</h4>
+            <p>Carlos Solis</p>
+            <p class="price"><strike> $200 </strike> <span> $15 </span> </p>
+            <a href="#" class="add-cart" data-id="6">Agregar Al Carrito</a>
+          </div>
+        </article>
+
+      </section>
+
+    </div>
+
+    <aside id="cart" class="cart">                         
+      <table id="cart-list" class="course-list">
+        <h3>Cart</h3>
+          <thead>
+              <tr>
+                  <th>Image</th>
+                  <th>Course</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody></tbody>
+      </table>
+
+      <a href="#" id="remove-cart" class="button">Vaciar Carrito</a>
+    </aside>
+
+    <footer>
+      <!-- <div class="footer-texts">
+        <ul class="footer-info">
+          <li>Contacto</li>
+          <li>Moneda</li>
+          <li>Idioma</li>
+        </ul>
+      </div> -->
+    </footer>
+  </main>
+  
+  <script src="js/app.js"></script>
+</body>
+</html>
